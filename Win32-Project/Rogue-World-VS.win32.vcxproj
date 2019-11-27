@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Src\AppDelegate.h" />
+    <ClInclude Include="..\Src\Box.h" />
+    <ClInclude Include="..\Src\DGenerator.h" />
+    <ClInclude Include="..\Src\Floor.h" />
+    <ClInclude Include="..\Src\Game.h" />
+    <ClInclude Include="..\Src\GameData.h" />
+    <ClInclude Include="..\Src\Hero.h" />
+    <ClInclude Include="..\Src\Level.h" />
+    <ClInclude Include="..\Src\Map.h" />
+    <ClInclude Include="..\Src\Monster.h" />
+    <ClInclude Include="..\Src\Npc.h" />
+    <ClInclude Include="..\Src\Object.h" />
+    <ClInclude Include="..\Src\Scenes\AboutLayer.h" />
+    <ClInclude Include="..\Src\Scenes\InstructionsLayer.h" />
+    <ClInclude Include="..\Src\Scenes\MenuLayer.h" />
+    <ClInclude Include="..\Src\Scenes\OptionsLayer.h" />
+    <ClInclude Include="..\Src\A-Star.h" />
+    <ClInclude Include="..\Src\Utils.h" />
+    <ClInclude Include="..\Src\Wall.h" />
+    <ClInclude Include="main.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Src\AppDelegate.cpp" />
+    <ClCompile Include="..\Src\Box.cpp" />
+    <ClCompile Include="..\Src\DGenerator.cpp" />
+    <ClCompile Include="..\Src\Floor.cpp" />
+    <ClCompile Include="..\Src\Game.cpp" />
+    <ClCompile Include="..\Src\GameData.cpp" />
+    <ClCompile Include="..\Src\Hero.cpp" />
+    <ClCompile Include="..\Src\Level.cpp" />
+    <ClCompile Include="..\Src\Monster.cpp" />
+    <ClCompile Include="..\Src\Npc.cpp" />
+    <ClCompile Include="..\Src\Object.cpp" />
+    <ClCompile Include="..\Src\Scenes\AboutLayer.cpp" />
+    <ClCompile Include="..\Src\Scenes\InstructionsLayer.cpp" />
+    <ClCompile Include="..\Src\Scenes\MenuLayer.cpp" />
+    <ClCompile Include="..\Src\Scenes\OptionsLayer.cpp" />
+    <ClCompile Include="..\Src\Wall.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="myCocos.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Src\cocos2d-x-doc.txt" />
+    <None Include="..\Src\To-Do.txt" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{729B4A08-179C-44AD-A818-8F3149507B97}</ProjectGuid>
+    <ProjectName>Rogue-World</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\Builds\Win32\Debug\</OutDir>
+    <IntDir>..\Builds\Win32\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Rogue-World\Src;C:\Rogue-World\Dependencies\PugiXML\src;C:\Rogue-World\Dependencies\cocos2d-x\cocos2dx\platform\third_party\win32;C:\Rogue-World\Dependencies\cocos2d-x\cocos2dx\platform;C:\Rogue-World\Dependencies\cocos2d-x\cocos2dx\script_support;C:\Rogue-World\Dependencies\cocos2d-x\cocos2dx\platform\win32;C:\Rogue-World\Dependencies\cocos2d-x\cocos2dx\platform\third_party\win32\OGLES;C:\Rogue-World\Dependencies\cocos2d-x\cocos2dx\include;C:\Rogue-World\Dependencies\cocos2d-x\cocos2dx;C:\Rogue-World\Dependencies\cocos2d-x\CocosDenshion\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Rogue-World\Builds\Win32\Release;C:\Rogue-World\Builds\Win32\Debug;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir>$(Configuration).win32\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;.\win32;.\Classes;..\cocos2dx;..\cocos2dx\include;..\cocos2dx\platform;..\cocos2dx\platform\third_party\win32\OGLES;..\CocosDenshion\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;STRICT;_DEBUG;COCOS2D_DEBUG=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4251;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libcocos2d.lib;libgles_cm.lib;libCocosDenshion.lib;pugixmld.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+    </Link>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <HeaderFileName>myCocos.h</HeaderFileName>
+      <InterfaceIdentifierFileName>myCocos_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>myCocos_p.c</ProxyFileName>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>$(IntDir)/myCocos.tlb</TypeLibraryName>
+      <DllDataFileName>
+      </DllDataFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;.\win32;.\Classes;..\cocos2dx;..\cocos2dx\include;..\cocos2dx\platform;..\cocos2dx\platform\third_party\win32\OGLES;..\CocosDenshion\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;STRICT;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4251;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libcocos2d.lib;libgles_cm.lib;libCocosDenshion.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <HeaderFileName>myCocos.h</HeaderFileName>
+      <InterfaceIdentifierFileName>myCocos_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>myCocos_p.c</ProxyFileName>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>$(IntDir)/myCocos.tlb</TypeLibraryName>
+      <DllDataFileName>
+      </DllDataFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="main.h" />
+    <ClInclude Include="..\Src\AppDelegate.h" />
+    <ClInclude Include="..\Src\DGenerator.h" />
+    <ClInclude Include="..\Src\Game.h" />
+    <ClInclude Include="..\Src\GameData.h" />
+    <ClInclude Include="..\Src\Utils.h" />
+    <ClInclude Include="..\Src\Scenes\AboutLayer.h">
+      <Filter>Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Scenes\InstructionsLayer.h">
+      <Filter>Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Scenes\MenuLayer.h">
+      <Filter>Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Box.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Monster.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Npc.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Object.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Wall.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Floor.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Scenes\OptionsLayer.h">
+      <Filter>Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Hero.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Level.h">
+      <Filter>Map</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Map.h">
+      <Filter>Map</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\A-Star.h">
+      <Filter>Map</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="..\Src\AppDelegate.cpp" />
+    <ClCompile Include="..\Src\DGenerator.cpp" />
+    <ClCompile Include="..\Src\Game.cpp" />
+    <ClCompile Include="..\Src\GameData.cpp" />
+    <ClCompile Include="..\Src\Scenes\AboutLayer.cpp">
+      <Filter>Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Scenes\InstructionsLayer.cpp">
+      <Filter>Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Scenes\MenuLayer.cpp">
+      <Filter>Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Box.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Monster.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Npc.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Object.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Wall.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Floor.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Scenes\OptionsLayer.cpp">
+      <Filter>Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Hero.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Level.cpp">
+      <Filter>Map</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="myCocos.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Src\cocos2d-x-doc.txt" />
+    <None Include="..\Src\To-Do.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Scenes">
+      <UniqueIdentifier>{8aed717b-9fcf-4b19-a0d6-24112f018799}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects">
+      <UniqueIdentifier>{3d83c195-26dd-419f-a3ac-bb2e2beccbe0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Map">
+      <UniqueIdentifier>{2854cfc5-a711-4248-803f-901a5068df85}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Rogue-World-VS.win32", "Rogue-World-VS.win32.vcxproj", "{729B4A08-179C-44AD-A818-8F3149507B97}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{729B4A08-179C-44AD-A818-8F3149507B97}.Debug|Win32.ActiveCfg = Debug|Win32
+		{729B4A08-179C-44AD-A818-8F3149507B97}.Debug|Win32.Build.0 = Debug|Win32
+		{729B4A08-179C-44AD-A818-8F3149507B97}.Release|Win32.ActiveCfg = Release|Win32
+		{729B4A08-179C-44AD-A818-8F3149507B97}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
